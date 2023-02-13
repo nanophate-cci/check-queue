@@ -11,6 +11,7 @@ jobs:
       - queue/until_front_of_line:
           only-on-branch: main
           time: '10'
+          circleci-host: gke-circleci.nanophate.com
       - run: echo "This job will not overlap"
 orbs:
   queue: eddiewebb/queue@dev:442
