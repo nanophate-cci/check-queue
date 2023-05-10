@@ -8,7 +8,7 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
-      - sleep 340000
+      - run: sleep 340000
       - queue/until_front_of_line:
           only-on-branch: main
           time: '10'
